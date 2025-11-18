@@ -4,17 +4,15 @@
 [ext_resource type="Texture2D" uid="uid://dknpi2mq4dhpa" path="res://assets/health_icon.svg" id="2_fh62r"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_nak5q"]
-radius = 30.88
+radius = 27.018513
 
 [node name="HealthPack" type="Area2D"]
 script = ExtResource("1_ht84s")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(938, 199)
 texture = ExtResource("2_fh62r")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(938, 199)
 shape = SubResource("CircleShape2D_nak5q")
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]
