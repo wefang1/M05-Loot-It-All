@@ -29,3 +29,17 @@ rotation = 1.36715
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-6, 0)
 shape = SubResource("CircleShape2D_5xifn")
+
+[node name="UI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -6.0
+offset_right = 34.0
+offset_bottom = 40.0
+
+[node name="HealthBar" type="ProgressBar" parent="UI"]
+layout_mode = 0
+offset_left = 6.0
+offset_top = -85.0
+offset_right = 10.0
+offset_bottom = -58.0
